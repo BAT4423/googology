@@ -152,8 +152,12 @@ header {
   </section>
 
   <footer>
-    © 2026 · Built with GitHub Pages
-  </footer>
+  © <span id="year"></span> · Built with GitHub Pages
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
