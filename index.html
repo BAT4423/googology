@@ -23,8 +23,30 @@
     }
 
     /* HEADER */
-    header {
-      text-align: center;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a img {
+  width: 26px;
+  height: 26px;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover img {
+  opacity: 1;
+  transform: scale(1.15);
+}
+    text-align: center;
       margin-bottom: 40px;
     }
 
