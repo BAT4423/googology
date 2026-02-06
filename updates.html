@@ -1,129 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BAT4423's Googology Site</title>
+  <meta charset="UTF-8" />
+  <title>Updates / Changelog</title>
 
-  <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-
-  <script src="https://kit.fontawesome.com/3df9cfc11d.js" crossorigin="anonymous"></script>
+  <!-- JetBrains Mono -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+    rel="stylesheet"
+  />
 
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-    }
-
-     body {
       font-family: "JetBrains Mono", monospace;
-      background: radial-gradient(circle at top, #1b1b14, #000);
-      color: #e6e6c8;
-      min-height: 100vh;
-      padding: 40px;
-      
-  opacity: 0;
-  animation: fadeIn 2s ease-out forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+      background: radial-gradient(circle at top, #1a1a1a, #000000 70%);
+      color: #ffcbd1;
     }
 
-    /* HEADER */
-header {
-    text-align: center;
-      margin-bottom: 40px;
+    .updates-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
     }
 
-    header h1 {
-      font-size: 2.4rem;
-      text-shadow: 0 0 15px rgba(220, 220, 160, 0.4);
+    h1 {
+      font-size: 32px;
+      margin-bottom: 32px;
+      letter-spacing: 1px;
     }
 
-    header p {
-      margin-top: 10px;
-      opacity: 0.8;
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      color: #ffd6dc;
     }
-    
-    .social-icons a {
-  font-size: 22px;
-}
 
-.social-icons a:hover {
-  transform: scale(1.2);
-}
-      
-    /* FOOTER */
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 6px 0;
+      line-height: 1.6;
+    }
+
+    /* cấp 1 */
+    .lvl-1 {
+      margin-left: 24px;
+      color: #ffcbd1;
+    }
+
+    /* cấp 2 */
+    .lvl-2 {
+      margin-left: 48px;
+      color: #f6b8c1;
+    }
+
+    /* cấp 3 */
+    .lvl-3 {
+      margin-left: 72px;
+      color: #eaa6af;
+    }
+
+    code {
+      background: rgba(255, 203, 209, 0.12);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+
     footer {
+      margin-top: 80px;
       text-align: center;
-      margin-top: 60px;
-      opacity: 0.5;
-      font-size: 0.85rem;
+      font-size: 13px;
+      color: #a88b90;
+      opacity: 0.8;
     }
   </style>
 </head>
 
 <body>
-  <main class="content">
-    <div class="updates-container">
+  <div class="updates-container">
     <h1>Updates / Changelog</h1>
 
-    <section class="version">
-      <h2>Version 1.0 — Feb 4, 2026</h2>
-      <ul>
-        <li>Opened the website for public testing</li>
-        <li>Renamed the site title to <strong>“BAT4423’s Googology Site”</strong></li>
-        <li>Started the <strong>EXHAUSTIVE Standard Googology Number List</strong> (WIP)</li>
-      </ul>
-    </section>
+    <h2>Version 1.0 — Feb 4, 2026</h2>
+    <ul>
+      <li>Opened the website for public testing</li>
+      <li>Renamed the site title to “BAT4423’s Googology Site”</li>
+      <li>Started the EXHAUSTIVE Standard Googology Number List (WIP)</li>
+    </ul>
 
-    <section class="version">
-      <h2>Version 1.1.1 — Feb 5, 2026</h2>
-      <ul>
-        <li>Added YouTube and Ko-fi support buttons</li>
-        <li>Split the site into three main sections:</li>
-        <ul>
-          <li><strong>Standard Googology</strong>
-            <ul>
-              <li>EXHAUSTIVE Standard Googology Number List (WIP)</li>
-              <li>Hyperoperations (Extended)</li>
-            </ul>
-          </li>
-          <li><strong>-illion Numbers</strong>
-            <ul>
-              <li><em>-illion Numbers Getting Bigger</em> (Text Version)</li>
-            </ul>
-          </li>
-          <li><strong>Old Stuff</strong>
-            <ul>
-              <li>Three older versions of Standard Notation</li>
-            </ul>
-          </li>
-        </ul>
-      </ul>
-    </section>
+    <h2>Version 1.1.1 — Feb 5, 2026</h2>
+    <ul>
+      <li>Added YouTube and Ko-fi support buttons</li>
+      <li>Split the site into three main sections:</li>
 
-    <section class="version">
-      <h2>Version 1.1.2 — Feb 6, 2026</h2>
-      <ul>
-        <li>
-          Linked the main site to the
-          <strong>EXHAUSTIVE Standard Googology Number List</strong>
-          (<code>numberlist.html</code>)
-        </li>
-      </ul>
-    </div>
-    </section>
+      <li class="lvl-1">Standard Googology</li>
+      <li class="lvl-2">EXHAUSTIVE Standard Googology Number List (WIP)</li>
+      <li class="lvl-2">Hyperoperations (Extended)</li>
 
-  <footer>
-  © <span id="year"></span> · Built with GitHub Pages
-</footer>
+      <li class="lvl-1">-illion Numbers</li>
+      <li class="lvl-2">-illion Numbers Getting Bigger (Text Version)</li>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+      <li class="lvl-1">Old Stuff</li>
+      <li class="lvl-2">Three older versions of Standard Notation</li>
+    </ul>
+
+    <h2>Version 1.1.2 — Feb 6, 2026</h2>
+    <ul>
+      <li>
+        Linked the main site to the EXHAUSTIVE Standard Googology Number List
+        (<code>numberlist.html</code>)
+      </li>
+    </ul>
+
+    <footer>
+      © 2026 · Built with GitHub Pages
+    </footer>
+  </div>
 </body>
 </html>
