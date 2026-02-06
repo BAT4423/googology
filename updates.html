@@ -9,6 +9,8 @@
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
     rel="stylesheet"
   />
+  
+  <script src="https://kit.fontawesome.com/3df9cfc11d.js" crossorigin="anonymous"></script>
 
   <style>
     body {
@@ -16,7 +18,16 @@
       font-family: "JetBrains Mono", monospace;
       background: radial-gradient(circle at top, #1a1a1a, #000000 70%);
       color: #ffcbd1;
+    
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
     }
+
+      @keyframes fadeIn {
+      to {
+      opacity: 1;
+    }
+  }
 
     .updates-container {
       max-width: 900px;
@@ -48,21 +59,18 @@
       line-height: 1.6;
     }
 
-    /* cấp 1 */
     .lvl-1 {
-      margin-left: 24px;
+      margin-left: 30px;
       color: #ffcbd1;
     }
 
-    /* cấp 2 */
     .lvl-2 {
-      margin-left: 48px;
+      margin-left: 60px;
       color: #f6b8c1;
     }
 
-    /* cấp 3 */
     .lvl-3 {
-      margin-left: 72px;
+      margin-left: 90px;
       color: #eaa6af;
     }
 
@@ -86,6 +94,16 @@
 <body>
   <div class="updates-container">
     <h1>Updates / Changelog</h1>
+
+    <div class="social-icons">
+    <a href="https://www.youtube.com/@BAT4423" target="_blank" title="My YouTube Channel">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+
+    <a href="https://ko-fi.com/bat4423" target="_blank" title="Donate me">
+      <i class="fa-solid fa-mug-hot"></i>
+    </a>
+    </div>
 
     <h2>Version 1.0 — Feb 4, 2026</h2>
     <ul>
@@ -119,8 +137,12 @@
     </ul>
 
     <footer>
-      © 2026 · Built with GitHub Pages
+    © <span id="year"></span> · Built with GitHub Pages
     </footer>
+
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </div>
 </body>
 </html>
