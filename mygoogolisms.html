@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Googolisms List</title>
+
+  <!-- JetBrains Mono -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+    rel="stylesheet"
+  />
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: "JetBrains Mono", monospace;
+      background: radial-gradient(circle at top, #1a1a1a, #000000 70%);
+      color: ##ffdccc;
+    
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+      @keyframes fadeIn {
+      to {
+      opacity: 1;
+    }
+  }
+
+    .updates-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 32px;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      color: ##ffa780;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 6px 0;
+      line-height: 1.6;
+    }
+
+    .lvl-1 {
+      margin-left: 30px;
+      color: ##ff9566;
+    }
+
+    code {
+      background: rgba(255, 203, 209, 0.12);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 13px;
+      color: #a88b90;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="updates-container">
+    <h1>My Googolisms</h1>
+
+    <h2>Class 2 (10^6 ~ 10^10^6)</h2>
+    <ul>
+      <li>Created the earliest version of "Bat’s Googology Website", then abandoned it and moved to Google Sites</li>
+   </ul>
+    
+    <h2>Class 4 (10^10^10^6 ~ 10^10^10^10^6)</h2>
+    <ul>
+      <li>(Re)opened the website for testing</li>
+   </ul>
+    
+    <h2>Class 5 (10^10^10^10^6 ~ 10^10^10^10^10^6)</h2>
+    <ul>
+      <li>Renamed the site title to “BAT4423’s Googology Site”</li>
+      <li>Started the EXHAUSTIVE Standard Googology Number List (WIP)</li>
+    </ul>
+
+    <footer>
+    © <span id="year"></span> · Built with GitHub Pages
+    </footer>
+
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </div>
+</body>
+</html>
